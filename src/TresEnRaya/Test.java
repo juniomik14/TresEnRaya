@@ -1,5 +1,7 @@
 package TresEnRaya;
 
+import Controller.EnRayaControlador;
+import Model.EnRayaModelo;
 import View.EnRayaView;
 
 /*
@@ -24,11 +26,13 @@ public class Test {
 
         
         //Parte Joel
-        
+        EnRayaModelo model = new EnRayaModelo();
         
         
         
         //Parte Adria
+        
+        EnRayaControlador controller = new EnRayaControlador(model, view);
 
 
 
