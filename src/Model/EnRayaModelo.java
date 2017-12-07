@@ -72,16 +72,20 @@ String marca="";
 this.error=false;
 
 if(this.tablero[x][y].equals("") ){
-	this.tablero[x][y];
-	this.error=true;
+	this.tablero[x][y]=value;
+	marca = value;
+	
 
 	
+}else{
+marca = this.tablero[i][j];
+this.error=true;
 }
 	return marca;
 }
 
 public boolean isError() {return error;}
-public int getGanador() {return ganador}
+public int getGanador() {return ganador;}
 public String get_turno(){return (this.turno==1)? "Turno: X" : "Turno: O";}
 
 public boolean checkGanador(String marca){
