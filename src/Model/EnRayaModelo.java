@@ -43,5 +43,10 @@ public String setMovimiento(int posicion){
 	return out;
 	
 }
+private void changeTurno(){
 
+	turno = (turno==1)?2:1;
+	System.out.println("Se cambia turno, "+get_turno());
+
+}
 }
