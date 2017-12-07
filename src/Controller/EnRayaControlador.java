@@ -42,12 +42,24 @@ public class EnRayaControlador {
                   else if( model.getGanador()== 2) {seleccion = view.showMessage(" 'O' ");}
                   else if(model.getGanador()== 3) {seleccion = view.showMessage(" 'Es un empate' ");}
             
+                  switch (seleccion){
+                      case 0:{
+                          model.reset();
+                          view.reset();
+                          break;
+                      }
+                      case 1:{
+                          System.exit(0); //Exit
+                          break;
+                      }
+                  }
+            }}}
             }
             
-        }
-        }
         
-    }
+        
+        
+    
     
 
 
