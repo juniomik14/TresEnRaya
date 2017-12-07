@@ -26,7 +26,12 @@ public class EnRayaControlador {
         for (JButton button : view.buttons){
             button.addActionListener((ActionListener) this);
         }
+       
+    
+    }
+    public void actionPerformed(ActionEvent ae) {
+        
+    }
     }
 
-}
 
