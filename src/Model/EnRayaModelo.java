@@ -63,6 +63,21 @@ private String marcar(int posicion, String value){
 		case 9:marca = sub_marcar (2,2,value); break;
 
 	}
+	return marca
+		;
+}
+
+private String sub_marcar (int x , int y , String value){
+String marca="";
+this.error=false;
+
+if(this.tablero[x][y].equals("") ){
+	this.tablero[x][y];
+	this.error=true;
+
+	
+}
 	return marca;
 }
+
 }
