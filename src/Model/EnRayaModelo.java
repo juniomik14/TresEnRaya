@@ -111,4 +111,12 @@ if(tablero[0][2].equals(marca) && tablero[1][1].equals(marca) && tablero[2][0].e
 	return false;
 }
 
+private boolean isFinJuego(){
+	for(int i =0; i < tablero.length; i++){
+		for(int j=0; j < tablero.length; j++){
+			if(tablero[i][j].equals("")){return false;}
+		}}
+	return true;
+}
+
 }
