@@ -11,5 +11,9 @@ package Model;
  */
 public class EnRayaModelo {
    
-"hola"
+private int turno=1;
+private String marca_X = "X";
+private String marca_O = "O";
+private boolean error = false;
+private int ganador; //1=>jugador1 2=>jugador2 3=>Empate
 }
