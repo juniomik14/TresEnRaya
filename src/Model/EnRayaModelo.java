@@ -78,7 +78,7 @@ if(this.tablero[x][y].equals("") ){
 
 	
 }else{
-marca = this.tablero[i][j];
+marca = this.tablero[x][y];
 this.error=true;
 }
 	return marca;
