@@ -84,5 +84,31 @@ public boolean isError() {return error;}
 public int getGanador() {return ganador}
 public String get_turno(){return (this.turno==1)? "Turno: X" : "Turno: O";}
 
+public boolean checkGanador(String marca){
+for (int i=0; i < tablero.length ; i++)
+{
+byte count=0;
+	for(int j=0; j < tablero.length; j++)
+		count+=(tablero[i][j].equals(marca) )?1:0;
+	if( count==3)
+		return true;
+
+}
+for (int j =0; j < tablero.length; j++)
+{
+byte count=0;
+	for (int i=0; i < tablero.length; i++)
+		count+=(tablero[i][j].equals(marca) )?1:0;
+	if(count==3)
+		return true;
+}
+if(tablero[0][0].equals(marca) && tablero[1][1].equals(marca) && tablero[2][2].equals(marca) )
+	return true;
+
+if(tablero[0][2].equals(marca) && tablero[1][1].equals(marca) && tablero[2][0].equals(marca) )
+	return true;
+
+	return false;
+}
 
 }
