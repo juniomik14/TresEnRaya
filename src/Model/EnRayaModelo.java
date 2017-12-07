@@ -49,4 +49,20 @@ private void changeTurno(){
 	System.out.println("Se cambia turno, "+get_turno());
 
 }
+private String marcar(int posicion, String value){
+	String marca="";
+	switch (posicion){
+		case 1:marca = sub_marcar (0,0,value); break;
+		case 2:marca = sub_marcar (0,1,value); break;
+		case 3:marca = sub_marcar (0,2,value); break;
+		case 4:marca = sub_marcar (1,0,value); break;
+		case 5:marca = sub_marcar (1,1,value); break;
+		case 6:marca = sub_marcar (1,2,value); break;
+		case 7:marca = sub_marcar (2,0,value); break;
+		case 8:marca = sub_marcar (2,1,value); break;
+		case 9:marca = sub_marcar (2,2,value); break;
+
+	}
+	return marca;
+}
 }
