@@ -31,4 +31,17 @@ public void reset(){
 	this.turno = 1;
 }
 
+public String setMovimiento(int posicion){
+	String out ="";
+	out = marcar(posicion, (turno==1) ?this.marca_X:this.marca_O);
+
+	if(checkGanador(this.marca_X)) this.ganador=1;
+	else if (checkGanador(this.marca_O)) this.ganador=2;
+	else if (isFinJuego()) this.ganador=3;
+
+	changeTurno();
+	return out;
+	
+}
+
 }
