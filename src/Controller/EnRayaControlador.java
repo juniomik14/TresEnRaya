@@ -30,8 +30,12 @@ public class EnRayaControlador {
     
     }
     public void actionPerformed(ActionEvent ae) {
+        for (JButton button : view.buttons){
+            
+        }
+        }
         
     }
-    }
+    
 
 
