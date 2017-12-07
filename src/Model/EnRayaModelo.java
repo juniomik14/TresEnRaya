@@ -80,4 +80,9 @@ if(this.tablero[x][y].equals("") ){
 	return marca;
 }
 
+public boolean isError() {return error;}
+public int getGanador() {return ganador}
+public String get_turno(){return (this.turno==1)? "Turno: X" : "Turno: O";}
+
+
 }
