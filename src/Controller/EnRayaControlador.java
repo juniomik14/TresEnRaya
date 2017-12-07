@@ -31,7 +31,13 @@ public class EnRayaControlador {
     }
     public void actionPerformed(ActionEvent ae) {
         for (JButton button : view.buttons){
-            
+            if (button == ae.getSource()){
+                  String s = model.setMovimiento(Integer.parseInt(button.getName()));
+                  //update view
+                  button.setText(s);
+                  //check winner
+                  int seleccion = -1;
+            }
             
         }
         }
